@@ -52,39 +52,39 @@ www.semeion.it
 
             - 2.2.1 Logistic Regression
 
-            - 2.2.2 KNN
+            - 2.2.2 SVM
 
-            - 2.2.3 Naïve Bayes
+            - 2.2.3 Random Forest
 
-            - 2.2.4 Decision Trees
+            - 2.2.4 Xg boost
 
-            - 2.2.5 Random Forest
 
-   3. **Principal Component Analysis**
 
-        - 3.1 PCA Transformation
 
-            - 3.1.1 Obtain CoVariance Matrix
 
-            - 3.1.2 Obtain EigenVectors and EigenValues
+  
 
-            - 3.1.3 Plot EigenValues
+    
 
-        - 3.2 Dimension Reduction to Principal Components
+     
 
-            - 3.2.1 Reduction of Dimension
+            
 
-        - 3.3 Modelling and Classification
+    
 
-            - 3.3.1 Logistic Regression
+  
 
-            - 3.3.2 K Nearest Neighbor
 
-            - Naïve Bayes
 
-            - Decision Trees
+      
 
-            - Random Forest
+     
+
+      
+
+          
+
+
 
    
 
@@ -98,48 +98,52 @@ www.semeion.it
 
    3. Decision Tree outperforms other Non-Ensamble models.
 
-   4. Naïve Bayes performs better on a PCA model i.e., when the dimensions are reduced.
+ 
 
-   5. Random Forests can substantially increase the efficiency but are computationally expansive when dealing with a large dataset as in this case.
-
-   
+   4. Random Forests can substantially increase the efficiency but are computationally expansive when dealing with a large dataset as in this case.
 
    
 
-|    **Model**     |    **Classification Accuracy**    | **Classification Error**   |
+   
+
+|    **Model**     |    **ROC AUC Score**    | **F1 Score**   |
 
  |:------------:|:-----------------------------:|:----------------------:|
 
- | `Logistic Regression`| 67.61 |32.39|
+ | `Logistic Regression`| 0.884 |0.60|
 
- | `KNN` | 71.46 |28.54|
+ | `SVM` | NAN |0.690|
 
- | `Naïve Bayes `| 34.71 |**65.29**|
+ | `Xg boost `| 0.953 |**0.751**|
 
- | `Decision Trees` | 72.04|27.96|
 
- | `Random Forest` | **79.43** |20.57|
 
- 
+ | `Random Forest` | **0.933** |0.732|
 
  
 
- | **PCA Model**| **PCA Classification Accuracy** | **PCA Classification Error**|
+ 
+
+ | **Model GridSearch CV**| **ROC AUC Score** | **F1 Score**|
 
  |:-----:| :-----------------------------: | :-------------:|
 
- | `Logistic Regression`|37.56 |62.44|
+ | `Logistic Regression`|0.896 |0.636|
 
- | `KNN` | **45.79** |54.21|
+ | `SVM` | **NAN** |0.708|
 
- | `Naïve Bayes` | 43.4 |56.6|
+ | `Xg boost` | 0.954 |0.774|
 
- | `Decision Trees` | 35.85 |**64.15**|
 
- | `Random Forest` | 44.94 |55.06|
+
+ | `Random Forest` | 0.953 |0.745|
 
 ## Conclusion:
 
-Several Classification techniques fair pretty well in predicting the defect-type.  Although data mining techniques are capable of extracting patterns and relationships hidden deep into large datasets, without the cooperation and feedback from the experts and professional, their results are useless. The patterns found via data mining techniques should be evaluated by professionals who have years of experience in Predicting steel plates faults. 
+Bagging and Boosting alogorithm performed well amongst the lot but still there is a margin to improve the performance.
+
+Finally, I can say that this project was quite challenging as working on a multiclass classification problem containing 7 unique classes with imbalanced sets made it tough.
+
+The model tuning and researching on parameters by understanding their use was the key highlight of this project.
 
     
