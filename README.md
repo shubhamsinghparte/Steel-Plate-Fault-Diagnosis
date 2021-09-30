@@ -1,6 +1,6 @@
 # Steel-Plate-Fault-Diagnosis
-Steel-Plate-Fault-Diagnosis
-# Steel Plates fault diagnosis using Classification Models
+
+
 
 ## Objective:
 
